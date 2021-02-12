@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 0;
+    background: rgb(255, 255, 255);
+    color: #000;
+    text-transform: uppercase;
+    font-family: 'Rajdhani', sans-serif;
+    cursor: pointer;
+}
+
+header {
+    height: calc(100vh - 150px);
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), no-repeat center/cover url('assets/cs6.jpg');
+    opacity: 4;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 30px;
+}
+
+header nav .logo {
+    color: white;
+    font-weight: bold;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+}
+
+header .header-content {
+    max-width: 400px;
+    margin: 150px auto;
+    text-align: center;
+    color: white;
+}
+
+header .header-content h1 {
+    font-size: 37px;
+}
+
+.sobre {
+    background: #101010;
+}
+
+.founders {
+    padding-top: 110px;
+    display: flex;
+    justify-content: center;
+}
+
+.founders .fouder-img {
+    width: 500px;
+    margin: 0 40px;
+}
+
+.founders .fouder-img img {
+    max-width: 100%;
+}
+
+.founder-content h1 {
+    font-size: 37px;
+    margin: .7px;
+}
+
+.founder-content {
+    max-width: 380px;
+    margin: 0 40px;
+    color: white;
+}
+
+.our-team {
+    background: #101010;
+}
+
+.our-team h1 {
+    MARGIN: 0;
+    COLOR: WHITE;
+    TEXT-ALIGN: CENTER;
+    PADDING: 50PX;
+}
+
+.cards {
+    text-align: center;
+}
+
+.cards .card {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+    max-width: 500px;
+}
+
+.cards .card .img-time {
+    filter: contrast(30%);
+    max-width: 100%;
+}
+
+.cards .card .img-time:hover {
+    filter: contrast(100%);
+    transform: scale(1.02);
+    transition: all ease 0.3s;
+}
+
+.cards .card .logo {
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cards .card .logo .img-logo {
+    max-width: 150px;
+}
+
+.cards .card .logo .img-logo-cs {
+    max-width: 200px;
+}
+
+.marcas {
+    background: #101010;
+}
+
+.marcas h1 {
+    margin: 0;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+.marcas .patrocinadores {
+    width: 100%;
+    background-color: #010101;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.marcas .patrocinadores .patrocinio {
+    margin: 20px 0px;
+}
+
+.footer {
+    padding: 40px;
+    background-color: #101010;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.footer ul li {
+    margin: 5px;
+    padding: 5px;
+}
+
+.footer ul li svg {
+    color: white;
+}
+
+.footer .redes-sociais p {
+    text-align: center;
+    color: white;
+}
+
+
+/* Responsividade */
+
+
+/* Landscape phones and down */
+
+@media (max-width: 900px) {
+    .founders {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .founder-content {
+        text-align: center;
+        max-width: 500px;
+    }
+    .founder-content p {
+        text-align: justify;
+    }
+    .founder-content h1 {
+        margin: 30px;
+    }
+    .founders .fouder-img {
+        width: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        margin-bottom: 55px;
+    }
+    header nav ul {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        z-index: 99;
+        background: #1d61dd;
+        color: white;
+        font-weight: bold;
+        height: 55px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
+/*Landscape phone to portrait tablet */
+
+
+/* Portrait tablet to landscape and desktop */
+
+@media (min-width: 480px) and (max-width: 979px) {}
+
+
+/* Large desktop */
+
+@media (max-width: 1200px) {}
