@@ -170,6 +170,14 @@ header .header-content h1 {
     margin: 20px 0px;
 }
 
+.marcas .patrocinadores img {
+    width: 200px;
+}
+
+.marcas .patrocinadores .adidas {
+    height: 150px;
+}
+
 .footer {
     padding: 40px;
     background-color: #101010;
